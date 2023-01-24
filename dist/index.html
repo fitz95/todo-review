@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Todo list</title>
+<script defer src="main.js"></script></head>
+<body>
+    <header>
+        <nav>
+
+        </nav>
+    </header>
+    <main>
+        <section class='todo-section'>
+            <div class="div-flex">
+                <h3>Today's Todo</h3>
+                <i class="fa fa-refresh" aria-hidden="true"></i>
+            </div>
+            <form class="add" id="addForm">
+                <input type="text" id="todoactivityinput" placeholder="Add to your list...">
+                <button type="submit"  class="addbtn" ><a href="javascript:{}" onclick="document.getElementById('addForm').submit();"><i class="fa fa-level-down fa-lg" aria-hidden="true" ></i></a> </button>
+            </form>
+            <form>
+            <div id="activity-div">
+                <div class="div-flex">
+                    <div class="activity-flex">
+                        <input type="checkbox"/>
+                        <p>Cleaning the floor</p>
+                    </div>
+                    <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                </div>
+            </div>
+            <div class="button-div">
+                <button id="clear" type="submit">Clear All Completed </button>
+            </div>
+        </form>
+        </section>
+    </main>
+</body>
+</html>
